@@ -7,51 +7,63 @@
   <body>
     <header>
       <h1>My ToDo List</h1>
+      <nav>
+        <a href="#All_todos">All todos</a> |
+        <a href="#Archive">Archive</a>
+      </nav>
     </header>
-    <nav>
-      <a href="#All _todos">All todos</a> |
-      <a href="#Archive">Archive</a>
-      <hr />
-    </nav>
-    <h2 id="All_todos">All todos</a></h2>
-    <ul>
-      <li>
-      <details>
-        <summary><input type="checkbox"/>🍞 Buy bread</summary>
-        <p>⏰ tommorow at 10:00</p>
-      </details>
-      </li>
-      <li>
-      <details>
-        <summary><input type="checkbox"/>🥛 Buy milk</summary>
-        <p>⏰ tommorow at 10:00</p>
-      </details>
-      </li>
-      <li>
-      <details>
-        <summary><input type="checkbox"/>💃 Go dance</summary>
-        <p>⏰ Valentines day</p>
-      </details>
-      </li>
-    </ul>
-    <h2 id="Archive">Archive</a></h2>
-    <ul>
-      <li>
-        <input type="checkbox" checked/><strike>Find the best frontend course</strike>
-      </li>
-      <li>
-        <input type="checkbox" checked/><strike>Complete Git & Github course</strike>
-      </li> 
-      <li>
-        <input type="checkbox" checked/><strike>Start cooking courses</strike>
-      </li> 
-      <li>
-        <input type="checkbox" checked/><strike>Find English course</strike>
-      </li> 
-    </ul>
+    <hr />
+    <main>
+      <section>
+        <h2 id="All_todos">All todos</h2>
+        <ul>
+          <li>
+            <details>
+              <summary>
+                <input type="checkbox" />🍞 Buy bread
+              </summary>
+              <p>⏰ tommorow at 10:00</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <input type="checkbox" />🥛 Buy milk
+              </summary>
+              <p>⏰ tommorow at 10:00</p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>
+                <input type="checkbox" />💃 Go dance
+              </summary>
+              <p>⏰ Valentines day</p>
+            </details>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="Archive">Archive</h2>
+        <ul>
+          <li>
+            <input type="checkbox" checked /><s>Find the best frontend course</s>
+          </li>
+          <li>
+            <input type="checkbox" checked /><s>Complete Git & Github course</s>
+          </li>
+          <li>
+            <input type="checkbox" checked /><s>Start cooking courses</s>
+          </li>
+          <li>
+            <input type="checkbox" checked /><s>Find English course</s>
+          </li>
+        </ul>
+      </section>
+    </main>
     <hr />
     <footer>
-      <p>© 2021</p>
+      <p>&copy 2021</p>
     </footer>
   </body>
 </html>
