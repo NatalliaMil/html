@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-      <label><a href="/">Shop</a></label>
+      <a href="/">Shop</a>
       <input type="search" />
       <button>Search</button>
     </header>
@@ -18,89 +18,110 @@
     </nav>
     <hr />
     <main>
-      <h2>
+      <h1>
         Philips Hue White and Color Ambiance A19 60W Equivalent LED Smart Bulb
         Starter Kit
-      </h2>
-      <label>Price: 100 &euro; </label>
-      <button>Buy now</button>
+      </h1>
+      <p>
+        Price: 100 &euro;
+        <button>Buy now</button>
+      </p>
       <ul>
         <li>
-          <a href="buy@shop.com">Order via email buy@shop.com</a>
+          <a href="mailto:buy@shop.com">Order via email buy@shop.com</a>
         </li>
         <li>
-          <a href="(111)1111111">Order via call (111)1111111</a>
+          <a href="tel:+1111111111">Order via call (111)1111111</a>
         </li>
       </ul>
       <h2 id="Photo_video">Photo &amp; Video</h2>
-      <table>
-        <tr>
-          <td rowspan="2">
-            <video controls>
-              <source src="https://tinyurl.com/fyb39h7h" />
-            </video>
-          </td>
-          <td><img src="https://tinyurl.com/3t98nuvj" width="250" /></td>
-        </tr>
-        <tr>
-          <td><img src="https://tinyurl.com/abbk7279" width="250" /></td>
-        </tr>
-      </table>
-      <h2 id="Change_the_way">Change the Way You Use Light</h2>
-      <table>
-        <tr>
-          <td><img src="https://tinyurl.com/3mc9cdap" width="250" /></td>
-          <td><img src="https://tinyurl.com/33c7tmhj" width="250" /></td>
-        </tr>
-        <tr>
-          <td>
-            <h3>Easy Control and Comfort</h3>
-          </td>
-          <td>
-            <h3>Light For Your Moments</h3>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Control your smart lights from your bedroom to your backyard using
-            your smart device, whether at home or away. It’s all about
-            simplifying your life. Dim the lights to relax in the evenings, and
-            set automated light schedules.
-          </td>
-          <td>
-            Customize your daily routines into moments you can enjoy. Philips
-            Hue can wake you up and help you energize, read, concentrate and
-            relax. With customized light recipes, you can always have the light
-            you need to accommodate your day.
-          </td>
-        </tr>
-      </table>
-      <h2 id="Product_information">Product information</h2>
-      <table border>
-        <tr>
-          <td>Manufactured</td>
-          <td>Color</td>
-          <td>Size</td>
-          <td>Luminous Flux</td>
-          <td>Included Components</td>
-        </tr>
-        <tr>
-          <td>Philips</td>
-          <td>White and Color Ambiance</td>
-          <td>3-Bulb Starter Kit</td>
-          <td>800 Lumen</td>
-          <td>3 Hue White and Color Bulbs^ 1 Hue bridge</td>
-        </tr>
-      </table>
+      <section>
+        <table>
+          <tr>
+            <td rowspan="2">
+              <video controls>
+                <source src="https://tinyurl.com/fyb39h7h" type="video/mp4" />
+              </video>
+            </td>
+            <td>
+              <img
+                src="https://tinyurl.com/3t98nuvj"
+                width="250"
+                alt="Philips Hue White and Color Ambiance"
+                title="Philips Hue White and Color Ambiance"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="https://tinyurl.com/abbk7279"
+                width="250"
+                alt="Philips Hue White and Color Ambiance"
+                title="Philips Hue White and Color Ambiance"
+              />
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2 id="Change_the_way">Change the Way You Use Light</h2>
+        <table>
+          <tr>
+            <td><img src="https://tinyurl.com/3mc9cdap" width="250" /></td>
+            <td><img src="https://tinyurl.com/33c7tmhj" width="250" /></td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Easy Control and Comfort</h3>
+            </td>
+            <td>
+              <h3>Light For Your Moments</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Control your smart lights from your bedroom to your backyard using
+              your smart device, whether at home or away. It’s all about
+              simplifying your life. Dim the lights to relax in the evenings,
+              and set automated light schedules.
+            </td>
+            <td>
+              Customize your daily routines into moments you can enjoy. Philips
+              Hue can wake you up and help you energize, read, concentrate and
+              relax. With customized light recipes, you can always have the
+              light you need to accommodate your day.
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2 id="Product_information">Product information</h2>
+        <table border="1">
+          <tr>
+            <td>Manufactured</td>
+            <td>Color</td>
+            <td>Size</td>
+            <td>Luminous Flux</td>
+            <td>Included Components</td>
+          </tr>
+          <tr>
+            <td>Philips</td>
+            <td>White and Color Ambiance</td>
+            <td>3-Bulb Starter Kit</td>
+            <td>800 Lumen</td>
+            <td>3 Hue White and Color Bulbs^ 1 Hue bridge</td>
+          </tr>
+        </table>
+      </section>
       <h2>Review</h2>
       <form>
         <fieldset>
           <legend>Leave your review</legend>
-          <label>Your name: </label>
-          <input type="text" placeholder="Your name" />
+          <label for="name">Your name: </label>
+          <input type="text" name="name" id="name" placeholder="Your name" />
           <br />
-          <textarea rows="5" placeholder="Please, add your review">
-          </textarea>
+          <textarea rows="5" placeholder="Please, add your review"></textarea>
           <br />
           <button>Add review</button>
         </fieldset>
@@ -111,13 +132,13 @@
       <address>
         <ul>
           <li>
-            <a href="https://shop.com/">Website</a>
+            <a href="mailto: https://shop.com/">Website</a>
           </li>
           <li>
             <a href="buy@shop.com">Email</a>
           </li>
           <li>
-            <a href="(111)1111111">Phone</a>
+            <a href="tel:+1111111111">Phone</a>
           </li>
         </ul>
       </address>
